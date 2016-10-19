@@ -13,10 +13,7 @@ public class Homework5Runner {
         double a, b, c,aria1,aria2,number;
                 Scanner scanner = new Scanner(System.in);
                 Calculate myCalc = new Calculate();
-                String inputData = "1234";
 
-        if(number.matches ("\\d")){
-            number = Integer.valueOf(inputData);
 
 
 
@@ -54,6 +51,5 @@ public class Homework5Runner {
             }
 
 
-        } else System.out.println(" enter 1-4   ");
         }
-}
+        }
