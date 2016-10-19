@@ -24,6 +24,10 @@ public class Homework5Runner {
             System.out.println(" 4 - exit  ");
             number = scanner.nextDouble();
 
+
+
+
+
             if (number == 1) {
                 System.out.println(" Enter a :     ");
                 a = scanner.nextDouble();
