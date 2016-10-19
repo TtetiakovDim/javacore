@@ -1,4 +1,6 @@
-package com.TretiakovDim.app.utils.runners;
+package com.tretiakovdim.runners.homework.lesson3;
+
+import com.tretiakovdim.app.classwork.utils.PrimitiveConvertor;
 
 /**
  * Created by Стас on 08.10.2016.

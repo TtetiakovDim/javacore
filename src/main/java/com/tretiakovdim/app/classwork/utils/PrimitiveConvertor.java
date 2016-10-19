@@ -1,4 +1,4 @@
-package com.TretiakovDim.app.utils.runners;
+package com.tretiakovdim.app.classwork.utils;
 
 /**
  * Created by Стас on 08.10.2016.

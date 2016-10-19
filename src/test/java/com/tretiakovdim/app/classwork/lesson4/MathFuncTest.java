@@ -1,4 +1,4 @@
-package com.TretiakovDim.app.classwork.lesson4;
+package com.tretiakovdim.app.classwork.lesson4;
 
 import org.junit.Assert;
 import org.junit.Test;

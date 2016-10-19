@@ -1,4 +1,4 @@
-package com.TretiakovDim.app;
+package com.tretiakovdim.app;
 
 /**
  * Hello world!

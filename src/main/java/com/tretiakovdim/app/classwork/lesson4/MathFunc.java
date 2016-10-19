@@ -1,4 +1,4 @@
-package com.TretiakovDim.app.classwork.lesson4;
+package com.tretiakovdim.app.classwork.lesson4;
 
 /**
  * Created by Стас on 12.10.2016.

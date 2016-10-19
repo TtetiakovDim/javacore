@@ -1,6 +1,6 @@
-package com.TretiakovDim.app.myHomework.lesson4;
+package com.tretiakovdim.app.homework.lesson4;
 
-import com.TretiakovDim.app.utils.runners.PrimitiveConvertor;
+import com.tretiakovdim.app.classwork.utils.PrimitiveConvertor;
 import org.junit.Assert;
 import org.junit.Test;
 
