@@ -1,4 +1,4 @@
-package classwork.lesson6;
+package com.tretiakovdim.app.classwork.lesson6;
 
 import com.tretiakovdim.app.classwork.lesson4.MathFunc;
 import com.tretiakovdim.app.classwork.lesson4.MathFunctions;
