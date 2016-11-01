@@ -89,6 +89,7 @@ public class ArraySorterTest {
     }
 
     public static int[] fromStringArray(String[] array) {
+
         int[] result = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             result[i] = Integer.valueOf(array[i]);

@@ -1,4 +1,4 @@
-package com.tretiakovDim.app;
+package com.tretiakovdim.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

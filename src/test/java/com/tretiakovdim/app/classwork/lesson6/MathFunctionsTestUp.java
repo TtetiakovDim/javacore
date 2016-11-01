@@ -17,7 +17,7 @@ import java.util.Arrays;
  */
 @RunWith(JUnitParamsRunner.class)
 
-public class MathFunctionsTestUp{
+public class MathFunctionsTestUp {
     @Test
     @FileParameters(value = "src/test/resources/testdata.csv",
             mapper = CsvWithHeaderMapper.class)
