@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 /**
- * Created by on 19.10.2016.
+ * Created on 19.10.2016.
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
@@ -20,8 +20,8 @@ public class ArraySorterTest {
 //Assume that with the same input data each method should have some specific results
 // in practice difference between sorting methods is time, but we will use earthier solution
 
-    private static final String INPUT_DATA = "src\\test\\resources\\input1.txt";
-    private static final String EXPECTED_RESULTS = "src\\test\\resources\\expexted1.txt";
+    private static final String INPUT_DATA = "src/test/resources/input1.txt";
+    private static final String EXPECTED_RESULTS = "src/test/resources/expexted1.txt";
     private static int[] inputData = null;
     private static int[] expectedResults = null;
 
@@ -58,6 +58,7 @@ public class ArraySorterTest {
     }
 
     @Ignore("Not ready yet")
+
     @Test(timeout = 1000)
     public void thisTestNotready() {
     }

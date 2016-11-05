@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Created by on 22.10.2016.
+ * Created  on 22.10.2016.
  */
 public class LoopsArraysRunner {
     public static void main(String[] args) throws IOException {

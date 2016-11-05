@@ -1,28 +1,27 @@
 package com.tretiakovdim.app.homework.lesson10;
-
 /**
  * Created  on 05.11.2016.
  */
 public class StringHomeWork10 {
 
     public static boolean checkIfPolindromOne(String palindrom) {
-
-           for (int i = 0; i < palindrom.length() / 2; i++) {
+        for (int i = 0; i < palindrom.length() / 2; i++) {
             if (palindrom.charAt(i) == palindrom.charAt(palindrom.length() - 1 - i)) {
 
             } else return false;
-
         }
         return true;
     }
-    public static boolean checkIfPolindromTwo(String palindrom) {
-        String copyString="";
-                for (int i = palindrom.length()-1; i>=0 ; i--) {
-            copyString=copyString+palindrom.charAt(palindrom.length() - 1 - i);
 
+    public static boolean checkIfPolindromTwo(String palindrom) {
+        String copyString = "";
+        for (int i = palindrom.length() - 1; i >= 0; i--) {
+            copyString = copyString + palindrom.charAt(palindrom.length() - 1 - i);
         }
 
-        if (palindrom.equals(copyString)){return true;} else return false ;
+        if (palindrom.equals(copyString)) {
+            return true;
+        } else return false;
     }
 
     public static boolean checkIfPolindromThree(String palindrom) {
@@ -35,8 +34,9 @@ public class StringHomeWork10 {
 //        String invertedText = strBuilder.toString();//присваиваем перевернутую строку
 //        return palindrom.equalsIgnoreCase(invertedText) ;//возвращаем сравнение двух строк вне зависимости от регистра
 
-        return palindrom.replaceAll("\\W", "").equalsIgnoreCase(new StringBuilder(palindrom.replaceAll("\\W", "")).reverse().toString());
-
+        return palindrom.replaceAll("\\W", "").equalsIgnoreCase(new StringBuilder(palindrom.replaceAll("\\W", ""))
+                .reverse()
+                .toString());
     }
 
     public static boolean checkIfPolindromFour(String palindrom) {

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
+
 /**
  * Created by on 22.10.2016.
  */
@@ -82,7 +83,7 @@ public class LoopsArrayshomework7 {
             for (int j = 0; j < inArrays[i].length; j++) {
                 inArrays[i][j] = (int) (Math.random() * 89 + 10);
 
-        //System.out.print(" i="+i+" j="+j+ " "+inArrays[i][j]);
+                //System.out.print(" i="+i+" j="+j+ " "+inArrays[i][j]);
             }
         }
         System.out.print(" " + Arrays.deepToString(inArrays));
@@ -98,7 +99,7 @@ public class LoopsArrayshomework7 {
             for (int j = 0; j < inArrays[i].length; j++) {
                 inArrays[i][j] = (int) (Math.random() * 999 + 1);
 
-                System.out.printf("%7d", + inArrays[i][j]);
+                System.out.printf("%7d", +inArrays[i][j]);
             }
         }
         System.out.print(" " + Arrays.deepToString(inArrays));

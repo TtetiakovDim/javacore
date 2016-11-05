@@ -10,7 +10,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 
 /**
- * Created by on 19.10.2016.
+ * Created on 19.10.2016.
  */
 @RunWith(value = Parameterized.class)
 public class MathFunctionsTest {
