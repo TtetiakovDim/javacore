@@ -12,10 +12,8 @@ public class LoopsArraysHomeWork9 {
 
     public int[] FillingArraysInt(int lengthArray) {
         Random random = new Random();
-        // Scanner scanner = new Scanner(System.in);
         int array[] = new int[lengthArray];
         for (int i = 0; i < array.length; i++) {
-            //  System.out.println(random.nextInt(31) - 15);
             array[i] = random.nextInt(31) - 15;
         }
         System.out.println(Arrays.toString(array));
@@ -45,9 +43,54 @@ public class LoopsArraysHomeWork9 {
         return max;
     }
 
+    public void IndexMassiva(int array[], int nums) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == nums) {
+
+                System.out.println("Index of your number in this array is: [" + i + "] ");
+                break;
+            }
+            if (i == array.length) {
+                System.err.println("There is no match in the array!");
+                break;
+            }
+        }
+    }
+
+
+    public boolean notInArray(int array[][], int random) {
+
+        return true;
+    }
+
+    public int TaskMultiplicationmulTable(int lengthArray, int WidthArray) {
+        int el = 0;
+        Random random = new Random();
+        int array[][] = new int[lengthArray][WidthArray];
+
+
+        while (el < lengthArray) {
+
+            for (int i = 0; i < array.length; i++) {
+                for (int j = 0; j < array[i].length; j++) {
+
+                    //  System.out.println(random.nextInt(31) - 15);
+//            array[i] = random.nextInt(9) + 1;
+                }
+
+                System.out.println(Arrays.toString(array));
+
+//        for (int i = 0; i < array.length; i++) {
+//            arrayRandom[i]= el=random.nextInt(9) + 1;
+//            if (array[i] !=  arrayRandom[i]) System.out.println(" \n" + array[i] + "*" + el + " = " + array[i] * el);
+            }
+        }
+        return el;
+    }
+
     public void LoopsArraysTask() {
         char inArrays[] = new char[256];
-        //System.out.println(inArrays.length+" ");
         for (int i = 0, j = 0; i < inArrays.length; i++) {
             inArrays[i] = (char) i;
         }

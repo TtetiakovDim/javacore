@@ -19,15 +19,29 @@ public class Homework9Runner {
     public static void main(String[] args) {
 
         LoopsArraysHomeWork9 MyLoopsArrayshomework = new LoopsArraysHomeWork9();
-        Scanner scanner = new Scanner(System.in);
 
         System.out.println(" Sort ");
         //System.out.println("9.Выход");
         MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortBubbleMaxToMin(MyLoopsArrayshomework.FillingArraysInt(15)));
         MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortBubbleMinToMax(MyLoopsArrayshomework.FillingArraysInt(15)));
         MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortSelection(MyLoopsArrayshomework.FillingArraysInt(15)));
-        System.out.println(" "+MyLoopsArrayshomework.SearchMaximalElement(MyLoopsArrayshomework.FillingTwoArraysInt(5,8)));
-        String line = null;
+        System.out.println(" " + MyLoopsArrayshomework.SearchMaximalElement(MyLoopsArrayshomework.FillingTwoArraysInt(5, 8)));
+//        MyLoopsArrayshomework.TablOffElement(15);
+
+        System.out.println(" Enter int: ");
+        Scanner sc = new Scanner(System.in);
+        try {
+            int userNum = sc.nextInt();
+
+                    System.out.println(" Your number in this int: " + userNum);
+            MyLoopsArrayshomework.IndexMassiva(MyLoopsArrayshomework.FillingArraysInt(10),userNum);
+
+        } catch ( Exception ex ) {
+            System.err.println("Input ERROR!");
+        } finally {
+            sc.close();
+        }
+    }
+
 
     }
-}

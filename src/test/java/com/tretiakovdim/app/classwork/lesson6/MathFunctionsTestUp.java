@@ -24,7 +24,8 @@ public class MathFunctionsTestUp {
     public void dataProviderTestAdd(int argA, int argB, int expOut) {
         MathFunctions myMathFunctions = new MathFunctions();
         Assert.assertEquals(expOut, myMathFunctions.multiply(argA, argB));
-    } //make sure that variables are in same order and types as in csv file
+    }
+    //make sure that variables are in same order and types as in csv file
 
 
 /*@RunWith(value = Parameterized.class)
