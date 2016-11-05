@@ -1,4 +1,4 @@
-package com.tretiakovdim.app.classwork.lesson6;
+package com.tretiakovdim.app.homework.lesson6;
 
 import org.junit.*;
 import org.junit.runners.MethodSorters;
