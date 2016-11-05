@@ -1,0 +1,6 @@
+double argA, double argB, double expRes
+2|2|4
+1,2,1
+2|3|8
+3|2|9
+5|2|25
