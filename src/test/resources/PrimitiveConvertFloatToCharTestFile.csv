@@ -1,0 +1,4 @@
+float argA, char expRes
+49.999f|1
+50.999f|2
+51.999f|3
