@@ -1,6 +1,6 @@
 package com.tretiakovdim.runners.homework.lesson7;
 
-import com.tretiakovdim.app.homework.lesson7.LoopsArrayshomework7;
+import com.tretiakovdim.app.homework.lesson7.LoopsArraysHomeWork7;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class LoopsArraysRunner {
     public static void main(String[] args) throws IOException {
-        LoopsArrayshomework7 MyLoopsArrayshomework7 = new LoopsArrayshomework7();
+        LoopsArraysHomeWork7 MyLoopsArrayshomework7 = new LoopsArraysHomeWork7();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("1.Задача - массив из всех чётных чисел от 2 до 20.");

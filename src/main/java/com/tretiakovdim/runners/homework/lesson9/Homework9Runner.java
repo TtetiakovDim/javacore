@@ -1,6 +1,5 @@
 package com.tretiakovdim.runners.homework.lesson9;
 
-import com.tretiakovdim.app.homework.lesson7.LoopsArrayshomework7;
 import com.tretiakovdim.app.homework.lesson9.LoopsArraysHomeWork9;
 
 import java.util.Scanner;
@@ -20,23 +19,22 @@ public class Homework9Runner {
 
         LoopsArraysHomeWork9 MyLoopsArrayshomework = new LoopsArraysHomeWork9();
 
-        System.out.println(" Sort ");
-        //System.out.println("9.Выход");
-        MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortBubbleMaxToMin(MyLoopsArrayshomework.FillingArraysInt(15)));
-        MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortBubbleMinToMax(MyLoopsArrayshomework.FillingArraysInt(15)));
-        MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortSelection(MyLoopsArrayshomework.FillingArraysInt(15)));
-        System.out.println(" " + MyLoopsArrayshomework.SearchMaximalElement(MyLoopsArrayshomework.FillingTwoArraysInt(5, 8)));
-//        MyLoopsArrayshomework.TablOffElement(15);
+        System.out.println(" HomeWork 9 ");
+//        MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortBubbleMaxToMin(MyLoopsArrayshomework.FillingArraysInt(15)));
+//        MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortBubbleMinToMax(MyLoopsArrayshomework.FillingArraysInt(15)));
+//        MyLoopsArrayshomework.arrayPrint(MyLoopsArrayshomework.LoopsArraysSortSelection(MyLoopsArrayshomework.FillingArraysInt(15)));
+//        System.out.println(" " + MyLoopsArrayshomework.SearchMaximalElement(MyLoopsArrayshomework.FillingTwoArraysInt(5, 8)));
+        MyLoopsArrayshomework.TaskMultiplicationmulTable(15,3);
 
         System.out.println(" Enter int: ");
         Scanner sc = new Scanner(System.in);
         try {
             int userNum = sc.nextInt();
 
-                    System.out.println(" Your number in this int: " + userNum);
-            MyLoopsArrayshomework.IndexMassiva(MyLoopsArrayshomework.FillingArraysInt(10),userNum);
+            System.out.println(" Your number in this int: " + userNum);
+            MyLoopsArrayshomework.IndexMassiva(MyLoopsArrayshomework.FillingArraysInt(10), userNum);
 
-        } catch ( Exception ex ) {
+        } catch (Exception ex) {
             System.err.println("Input ERROR!");
         } finally {
             sc.close();
@@ -44,4 +42,4 @@ public class Homework9Runner {
     }
 
 
-    }
+}

@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Created by on 22.10.2016.
+ * Created  on 22.10.2016.
  */
 public class LoopsArraysHomeWork9 {
 
@@ -61,41 +61,98 @@ public class LoopsArraysHomeWork9 {
 
     public boolean notInArray(int array[][], int random) {
 
+
         return true;
+
     }
 
-    public int TaskMultiplicationmulTable(int lengthArray, int WidthArray) {
-        int el = 0;
-        Random random = new Random();
-        int array[][] = new int[lengthArray][WidthArray];
-
-
-        while (el < lengthArray) {
-
-            for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < array[i].length; j++) {
-
-                    //  System.out.println(random.nextInt(31) - 15);
-//            array[i] = random.nextInt(9) + 1;
-                }
-
-                System.out.println(Arrays.toString(array));
-
+    public void TaskMultiplicationmulTable(int lengthArray, int WidthArray) {
+//        Для проверки остаточных знаний учеников после летних каникул, учитель младших классов решил начинать каждый урок
+//        с того, чтобы задавать каждому ученику пример из таблицы умножения, но в классе 15 человек, а примеры среди
+//        них не должны повторяться.В помощь учителю напишите программу, которая будет выводить на экран 15
+//        случайных примеров из таблицы
+//        умножения(от 2*2д о 9*9, потому что задания по умножению на 1 и на 10 — слишком просты).При этом среди 15
+//        примеров не должно быть повторяющихся(примеры 2*3и 3*2и им подобные пары считать повторяющимися)
+//
+//        Random random = new Random();
+//        int array[][] = new int[lengthArray][WidthArray];
+//        System.out.println(" " + array.length);
+//        System.out.println(" " + array[WidthArray].length);
 //        for (int i = 0; i < array.length; i++) {
-//            arrayRandom[i]= el=random.nextInt(9) + 1;
-//            if (array[i] !=  arrayRandom[i]) System.out.println(" \n" + array[i] + "*" + el + " = " + array[i] * el);
+//            for (int j = 0; j < array[i].length; j++) {
+//                array[i][j] = random.nextInt(9) + 1;
+//
+////                if (j == array[i].length - 1) {
+//                    array[i][j] = array[i][j - 2] * array[i][j - 1];
+//
+//                //Проверим, нет ли среди уже свормированых заданий (строк), таких, которые по условиям задачи нельзя задавать другому ученику. Для этого переберем все результаты умножения (3 элементы) предыдущих строк.
+////                    for (int k = 0; k < i; k++) {
+////                        if (array[i][j] == array[k][j] && i > 0) {
+//                            //Если мы нашли такую строку, надо убедиться, что множители в ней тоже совпадают. Для этого нам достаточно проверить совпадение одного множителя.
+////                            if (array[i][j - 1] == array[k][j - 1] || array[i][j - 2] == array[j][k - 2])
+//                                //Если мы находим такое совпадение - заполним элементы строки заново
+////                                --i;
+////                        }
+////                    }
+//
+//
+//                }
+//            }
+//
+////
+////        for(int i=0;i<array.length;i++){
+////            System.out.print("Задание №"+(i+1+" Умножить "));
+////            for(int j=0;j<array[i].length;j++){
+////                if(j==0)
+////                    System.out.print(array[i][j]+" на ");
+////                if(j==1)
+////                    System.out.println(array[i][j]);
+////            }
+////        }
+        int [][] Mas = new int[15][3];
+        for(int i =0;i<Mas.length;i++){
+            for(int h=0;h<Mas[i].length;h++){
+                //Первым двум элементам строки (множителям) присвоим рандомные значения от 2 до 9
+                Mas[i][h]=(int)(Math.random()*8)+2;
+                //3 элемент - это результат умножения первых двух элементов строки
+                if(h==Mas[i].length-1){
+                    Mas[i][h]=Mas[i][h-2]*Mas[i][h-1];
+                    //Проверим, нет ли среди уже свормированых заданий (строк), таких, которые по условиям задачи нельзя задавать другому ученику. Для этого переберем все результаты умножения (3 элементы) предыдущих строк.
+                    for(int q=0;q<i;q++){
+                        if(Mas[i][h]==Mas[q][h]&&i>0){
+                            //Если мы нашли такую строку, надо убедиться, что множители в ней тоже совпадают. Для этого нам достаточно проверить совпадение одного множителя.
+                            if(Mas[i][h-1]==Mas[q][h-1]||Mas[i][h-2]==Mas[q][h-2])
+                                //Если мы находим такое совпадение - заполним элементы строки заново
+                                --i;
+                        }
+                    }
+                }
             }
         }
-        return el;
+        //С помощью простого цикла выведем уже отобранные задания на экран
+        for(int i=0;i<Mas.length;i++){
+            System.out.print("Задание №"+(i+1+" Умножить "));
+            for(int h=0;h<Mas[i].length;h++){
+                if(h==0)
+                    System.out.print(Mas[i][h]+" на ");
+                if(h==1)
+                    System.out.println(Mas[i][h]);
+
+            }
+        }
     }
 
-    public void LoopsArraysTask() {
-        char inArrays[] = new char[256];
+
+
+
+    public String LoopsArraysTask(int lengthArray) {
+        char inArrays[] = new char[lengthArray];
         for (int i = 0, j = 0; i < inArrays.length; i++) {
             inArrays[i] = (char) i;
         }
         String myString = Arrays.toString(inArrays);
         System.out.println(" Arrays \n " + myString);
+        return myString;
     }
 
 

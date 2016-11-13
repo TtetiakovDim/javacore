@@ -22,6 +22,8 @@ public class Lesson5Runner {
         Scanner scanner = new Scanner(System.in);
         double number = scanner.nextDouble();
         Calculate myCalc = new Calculate();
+
+
         if (number==1){
 
             System.out.println(" Enter a ");

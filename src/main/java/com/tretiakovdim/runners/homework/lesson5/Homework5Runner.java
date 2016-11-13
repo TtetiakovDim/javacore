@@ -19,36 +19,36 @@ public class Homework5Runner {
         System.out.println(" 1 - right-angled triangle program   ");
         System.out.println(" 2 - calculate circle area program    ");
         System.out.println(" 3 - what an number is bigger/smaller program  ");
-        System.out.println(" 4 - exit  ");
-        number = scanner.nextDouble();
+        System.out.println("again? (y/n): ");
 
-
-        if (number == 1) {
-            System.out.println(" Enter a :     ");
-            a = scanner.nextDouble();
-            System.out.println(" Enter b :     ");
-            b = scanner.nextDouble();
-            System.out.println(" Enter c :     ");
-            c = scanner.nextDouble();
-            if (myCalc.rightAngledTriangleCHeck(a, b, c)) {
-                System.out.println(" This trangle is RightAngled ");
-            } else {
-                System.out.println(" This trangle is not RightAngled ");
+        do {
+            number = scanner.nextDouble();
+            if (number == 1) {
+                System.out.println(" Enter a :     ");
+                a = scanner.nextDouble();
+                System.out.println(" Enter b :     ");
+                b = scanner.nextDouble();
+                System.out.println(" Enter c :     ");
+                c = scanner.nextDouble();
+                if (myCalc.rightAngledTriangleCHeck(a, b, c)) {
+                    System.out.println(" This trangle is RightAngled ");
+                } else {
+                    System.out.println(" This trangle is not RightAngled ");
+                }
             }
-        }
-        if (number == 2) {
-            System.out.println(" Enter circle radius:     ");
-            System.out.println(" Circle area is :     " + myCalc.calCircleArea(scanner.nextDouble()));
-        }
+            if (number == 2) {
+                System.out.println(" Enter circle radius:     ");
+                System.out.println(" Circle area is :     " + myCalc.calCircleArea(scanner.nextDouble()));
+            }
 
-        if (number == 3) {
-            System.out.println(" Enter Area 1:     ");
-            aria1 = scanner.nextDouble();
-            System.out.println(" Enter Area 2:     ");
-            aria2 = scanner.nextDouble();
-            myCalc.calculateBigger(aria1, aria2);
-        }
+            if (number == 3) {
+                System.out.println(" Enter Area 1:     ");
+                aria1 = scanner.nextDouble();
+                System.out.println(" Enter Area 2:     ");
+                aria2 = scanner.nextDouble();
+                myCalc.calculateBigger(aria1, aria2);
+            }
 
-
+        } while (scanner.next().equalsIgnoreCase("4"));
     }
 }

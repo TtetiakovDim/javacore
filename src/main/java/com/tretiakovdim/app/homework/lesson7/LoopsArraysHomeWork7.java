@@ -8,10 +8,12 @@ import java.util.Scanner;
 /**
  * Created by on 22.10.2016.
  */
-public class LoopsArrayshomework7 {
+public class LoopsArraysHomeWork7 {
 
 
     public void LoopsArraysTaskOne() {
+//        Создайте массив из всех чётных чисел от 2 до 20 и выведите элементы массива на экран сначала в строку, отделяя
+//        один элемент от другого пробелом, а затем в столбик(отделяя один элемент от другого началом новой строки).
         int inArrays[] = new int[10];
         //System.out.println(inArrays.length+" ");
         for (int i = 0, j = 0; i < inArrays.length; i++) {
@@ -20,9 +22,12 @@ public class LoopsArrayshomework7 {
         for (int i = 0; i < inArrays.length; i++) System.out.print(" " + inArrays[i]);
         System.out.println(" ");
         for (int i = 0; i < inArrays.length; i++) System.out.println(" " + inArrays[i]);
+
     }
 
     public void LoopsArraysTaskTwo() {
+//        Создайте массив из всех нечётных чисел от 1 до 99, выведите его на экран в строку, а затем этот же массив
+//        выведите на экран в другую строку, но в обратном порядке(99 97 95 93 … 7 5 3 1)
         int inArrays[] = new int[50];
         //System.out.println(inArrays.length+" ");
         for (int i = 0, j = -1; i < inArrays.length; i++) {
@@ -35,6 +40,8 @@ public class LoopsArrayshomework7 {
     }
 
     public void LoopsArraysTaskTree() {
+//        Создайте массив из 15 случайных целых чисел из отрезка[0; 9].Выведите массив на экран.Подсчитайте сколько
+//        в массиве чётных элементов и выведете это количество на экран на отдельной строке.
         int inArrays[] = new int[15];
 
         for (int i = 0; i < inArrays.length; i++) {
@@ -49,7 +56,8 @@ public class LoopsArrayshomework7 {
     }
 
     public void LoopsArraysTaskFour() {
-
+//        Создайте массив из 15 случайных целых чисел из отрезка[0; 999].Выведите массив на экран.Выведите минимальное
+//        и максимальное значение элементов массива
         int inArrays[] = new int[15];
         int max = 0, min = 999;
         for (int i = 0; i < inArrays.length; i++) {
@@ -70,13 +78,12 @@ public class LoopsArrayshomework7 {
     }
 
     public void LoopsArraysTaskFife() {
-
     }
 
-    public void LoopsArraysTaskSix() throws IOException {
-        //Создать двумерный массив из 8 строк по 5 столбцов в каждой из случайных целых чисел из отрезка [10;99].
+    public void LoopsArraysTaskSix() {
+//        Создать двумерный массив из 8 строк по 5 столбцов в каждой из случайных целых чисел из отрезка[1; 999].
+//        Вывести массив на экран в виде матрицы, где в каждом столбце числа должны быть выравнены по правому краю столбца
         int inArrays[][] = new int[8][5];
-
         //System.out.print(" "+ Arrays.deepToString(inArrays));
 
         for (int i = 0; i < inArrays.length; i++) {
@@ -88,11 +95,13 @@ public class LoopsArrayshomework7 {
         }
         System.out.print(" " + Arrays.deepToString(inArrays));
 
-        //Runtime.getRuntime().exec("cls");
-
     }
 
     public void LoopsArraysTaskSeven() {
+//        Запросить у пользователя ввести ряд чисел c вводом по одному через Enter (запрашиваем число - ввел
+//        число - Enter - запрашиваем следующее).Ввод должен прерываться словом “exit”,о чем нужно сообщить
+//        пользователю.После этого вывести сумму всех введенных пользователем чисел.
+
         int inArrays[][] = new int[8][5];
         //System.out.print(" "+ Arrays.deepToString(inArrays));
         for (int i = 0; i < inArrays.length; i++) {
@@ -107,6 +116,9 @@ public class LoopsArrayshomework7 {
     }
 
     public void LoopsArraysTaskEight() {
+//        Запросить у пользователя ввести ряд чисел c вводом по одному через Enter (запрашиваем число - ввел
+//        число - Enter - запрашиваем следующее).Ввод должен прерываться словом “exit”,о чем нужно сообщить
+//        пользователю.После этого вывести сумму всех введенных пользователем чисел.
         int inArrays[] = new int[10];
         int summ = 0;
         System.out.println(" Введите чисела : ");
