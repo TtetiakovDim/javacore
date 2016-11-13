@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class Lesson12StringRunners {
     public static void main(String[] args) {
 
-//        System.out .println ("Enter numbers using comma delimiter");
-//        Scanner scanner  = new Scanner(System.in);
-//        String inputString = scanner.nextLine();
-//        System.out .println(inputString.split(" +").length);
+        System.out .println ("Enter numbers using comma delimiter");
+        Scanner scanner  = new Scanner(System.in);
+        String inputString = scanner.nextLine();
+        System.out .println(inputString.split(" +").length);
 
 //        long start = System.currentTimeMillis();
 //        String c = "start";
