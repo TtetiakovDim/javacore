@@ -1,5 +1,10 @@
 package com.tretiakovdim.app.homework.lesson18;
 
+import com.sun.xml.internal.bind.v2.model.core.ID;
+
+import java.util.Arrays;
+import java.util.regex.Pattern;
+
 /**
  * Created by DmitryTretiakov on 03.12.2016.
  * ** Реализовать картотеку университета, в которой хранятся сотрудники следующих типов (должностей): профессор, лаборант, заведующий кафедры,
@@ -31,7 +36,7 @@ public class UniversityPerson {
 
     public String getCart() {
 
-        return " | "+surname+" | "+name+" | "+faculty;
+        return " | "+surname+"      | "+name+"      | "+faculty;
     }
 
 
@@ -48,4 +53,25 @@ public class UniversityPerson {
         this.faculty = "";
         this.university = "";
     }
+public boolean infoCheck(Integer key,String value){
+    switch (key) {
+        case 1:
+            return this.surname.toLowerCase().contains(value.trim().toLowerCase());
+        case 2:
+            return this.name.toLowerCase().contains(value.trim().toLowerCase());
+        case 3:
+            return this.faculty.toLowerCase().contains(value.trim().toLowerCase());
+    }
+    return false;
 }
+//    public boolean infoSearchString(Integer key,String value){
+////        Pattern pattern = Pattern.compile(":|;");
+////        String[] strings = pattern.split(this.getCart());
+////        Arrays.asList(strings).forEach(animal -> System.out.print(animal + " "));
+//
+//        System.out.println(this.getCart());
+//        return this.getCart().toLowerCase().contains(value.trim().toLowerCase());
+//    }
+
+}
+

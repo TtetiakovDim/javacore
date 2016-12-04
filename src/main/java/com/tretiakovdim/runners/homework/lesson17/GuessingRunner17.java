@@ -7,6 +7,8 @@ import com.tretiakovdim.app.homework.lesson17.Menu;
 import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.awt.SystemColor.menu;
 
@@ -22,6 +24,25 @@ public class GuessingRunner17 {
         String string = scanner.nextLine();
         return string;
     }
+    public static Integer userInputInt() {
+        Scanner scanner = new Scanner(System.in);
+        try {
+        Integer string = scanner.nextInt();
+
+            return string;
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("Not correct, ente 1 or 9.  ");
+            return 0;
+        }
+        }
+    public static boolean checkMenu(String menuItem){
+        Pattern p = Pattern.compile("^[0-9]{1}$");
+        Matcher m = p.matcher(menuItem);
+        return m.matches();
+
+    }
+
 
     public static void main(String[] args) {
 

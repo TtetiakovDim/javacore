@@ -13,28 +13,16 @@ import java.util.List;
  */
 public class CardIndex {
 
-    //    public static ArrayList<String> cSVReade(String fileName) {
-//
-//        String csvFile = "/Users/mkyong/csv/country.csv";
-//        String line = "";
-//        String cvsSplitBy = ",";
-//
-//        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
-//
-//            while ((line = br.readLine()) != null) {
-//
-//                // use comma as separator
-//                String[] country = line.split(cvsSplitBy);
-//
-//                System.out.println("Country [code= " + country[4] + " , name=" + country[5] + "]");
-//
-//            }
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
+    public void infoSearch(ArrayList<UniversityPerson> list, String searchKey, Integer key) {
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).infoCheck(1, searchKey) == true) {
+                System.out.println(list.get(i).getCart() + " " + list.get(i).infoCheck(key, searchKey));
+            }
+        }
+        System.out.println("search done");
+    }
+
     public static ArrayList<UniversityPerson> filesReader(String fileName) {
         String cvsSplit = "|";
         BufferedReader reader;

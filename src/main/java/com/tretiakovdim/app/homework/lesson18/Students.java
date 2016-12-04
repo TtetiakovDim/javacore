@@ -24,6 +24,24 @@ public class Students extends UniversityPerson {
     @Override
     public String getCart(){
 
-        return super.getCart()+" | "+ status+" | "+yearOfStudy+" | ";
+        return super.getCart()+"        |    "+ status+"    |  "+yearOfStudy+" | ";
     }
+    @Override
+    public boolean infoCheck(Integer key, String value) {
+        switch (key) {
+            case 1:
+                return super.infoCheck(key, value);
+            case 2:
+                return super.infoCheck(key, value);
+            case 3:
+                return super.infoCheck(key, value);
+            case 4:
+                return this.status.toLowerCase().contains(value.trim().toLowerCase());
+            case 5:
+                return this.yearOfStudy.toLowerCase().contains(value.trim().toLowerCase());
+        }
+
+        return false;
+    }
+
 }
