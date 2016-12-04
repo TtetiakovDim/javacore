@@ -1,0 +1,8 @@
+String type , String surname,String name,String faculty,String university,String status,Integer yearOfStudy,String function
+Students	|Ivanov		|Ivan			|PMU		|KPI			|Student			|1			|
+Students	|IVanov		|Pavel			|PGT		|KGTU			|Bachelor			|4			|
+Students	|IVanenko	|Pavel			|PGT		|KGTU			|Specialist			|5			|
+Employees	|Ivanchyk	|Pavel			|PGT		|KGTU			|Master				|5			|
+Employees	|Ivanova	|Ira			|MMM		|KGTU			|					|			|Professor
+Employees	|Petrov		|Alex			|KPP		|KGTU			|					|			|Assistant
+Employees	|Petrova	|Ivanka			|PGT		|KGTU			|					|			|Head of department

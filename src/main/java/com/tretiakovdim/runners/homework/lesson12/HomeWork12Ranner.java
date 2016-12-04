@@ -10,6 +10,7 @@ import java.util.Arrays;
 /**
  * Created by DmitryTretiakov on 19.11.2016.
  */
+
 public class HomeWork12Ranner {
     public static void main(String[] args) {
         ArrayParser arrayParser = new ArrayParser();
@@ -34,10 +35,10 @@ public class HomeWork12Ranner {
                     System.out.println("Enter \"2\" to sort from bigger to smaller.");
                     switch (arrayParser.stringRead().toLowerCase()) {
                         case "1":
-                            System.out.println(Arrays.asList((arraySort.LoopsArraysSortBubbleMaxToMin(array))));
+//                            System.out.println(Arrays.asList((arraySort.LoopsArraysSortBubbleMaxToMin(array))));
                             break;
                         case "2":
-                            System.out.println(Arrays.asList((arraySort.LoopsArraysSortBubbleMinToMax(array))));
+//                            System.out.println(Arrays.asList((arraySort.LoopsArraysSortBubbleMinToMax(array))));
                             break;
                         default:
                             System.out.println("There is no such a sorting order.");

@@ -109,19 +109,19 @@ public class LoopsArraysHomeWork9 {
 ////                    System.out.println(array[i][j]);
 ////            }
 ////        }
-        int [][] Mas = new int[15][3];
-        for(int i =0;i<Mas.length;i++){
-            for(int h=0;h<Mas[i].length;h++){
+        int[][] Mas = new int[15][3];
+        for (int i = 0; i < Mas.length; i++) {
+            for (int h = 0; h < Mas[i].length; h++) {
                 //Первым двум элементам строки (множителям) присвоим рандомные значения от 2 до 9
-                Mas[i][h]=(int)(Math.random()*8)+2;
+                Mas[i][h] = (int) (Math.random() * 8) + 2;
                 //3 элемент - это результат умножения первых двух элементов строки
-                if(h==Mas[i].length-1){
-                    Mas[i][h]=Mas[i][h-2]*Mas[i][h-1];
+                if (h == Mas[i].length - 1) {
+                    Mas[i][h] = Mas[i][h - 2] * Mas[i][h - 1];
                     //Проверим, нет ли среди уже свормированых заданий (строк), таких, которые по условиям задачи нельзя задавать другому ученику. Для этого переберем все результаты умножения (3 элементы) предыдущих строк.
-                    for(int q=0;q<i;q++){
-                        if(Mas[i][h]==Mas[q][h]&&i>0){
+                    for (int q = 0; q < i; q++) {
+                        if (Mas[i][h] == Mas[q][h] && i > 0) {
                             //Если мы нашли такую строку, надо убедиться, что множители в ней тоже совпадают. Для этого нам достаточно проверить совпадение одного множителя.
-                            if(Mas[i][h-1]==Mas[q][h-1]||Mas[i][h-2]==Mas[q][h-2])
+                            if (Mas[i][h - 1] == Mas[q][h - 1] || Mas[i][h - 2] == Mas[q][h - 2])
                                 //Если мы находим такое совпадение - заполним элементы строки заново
                                 --i;
                         }
@@ -130,12 +130,12 @@ public class LoopsArraysHomeWork9 {
             }
         }
         //С помощью простого цикла выведем уже отобранные задания на экран
-        for(int i=0;i<Mas.length;i++){
-            System.out.print("Задание №"+(i+1+" Умножить "));
-            for(int h=0;h<Mas[i].length;h++){
-                if(h==0)
-                    System.out.print(Mas[i][h]+" на ");
-                if(h==1)
+        for (int i = 0; i < Mas.length; i++) {
+            System.out.print("Задание №" + (i + 1 + " Умножить "));
+            for (int h = 0; h < Mas[i].length; h++) {
+                if (h == 0)
+                    System.out.print(Mas[i][h] + " на ");
+                if (h == 1)
                     System.out.println(Mas[i][h]);
 
             }
@@ -143,9 +143,7 @@ public class LoopsArraysHomeWork9 {
     }
 
 
-
-
-    public String LoopsArraysTask(int lengthArray) {
+    public String loopsArraysTask(int lengthArray) {
         char inArrays[] = new char[lengthArray];
         for (int i = 0, j = 0; i < inArrays.length; i++) {
             inArrays[i] = (char) i;
@@ -156,7 +154,7 @@ public class LoopsArraysHomeWork9 {
     }
 
 
-    public int[] LoopsArraysSortBubbleMaxToMin(int array[]) {
+    public int[] loopsArraysSortBubbleMaxToMin(int array[]) {
         int a = 0, k = 0, j = 0;
         do {
             j = 0;
@@ -172,7 +170,7 @@ public class LoopsArraysHomeWork9 {
         return array;
     }
 
-    public int[] LoopsArraysSortBubbleMinToMax(int array[]) {
+    public int[] loopsArraysSortBubbleMinToMax(int array[]) {
         int a = 0, k = 0, j = 0;
         do {
             j = 0;
@@ -188,7 +186,7 @@ public class LoopsArraysHomeWork9 {
         return array;
     }
 
-    public int[] LoopsArraysSortSelection(int array[]) {
+    public int[] loopsArraysSortSelection(int array[]) {
         for (int min = 0; min < array.length - 1; min++) {
             int least = min;
             for (int j = min + 1; j < array.length; j++) {

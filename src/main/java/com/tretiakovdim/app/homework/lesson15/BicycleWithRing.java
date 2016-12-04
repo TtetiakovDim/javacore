@@ -5,6 +5,13 @@ package com.tretiakovdim.app.homework.lesson15;
  */
 public class BicycleWithRing extends CustomBicycle implements BicycleWithRingInterface {
 
-public void ring(){System.out.println("Di-ling!");}
 
+    @Override
+    public void ring() {
+        System.out.println("Di-ling!");
+    }
+
+    public void ring(int x) {
+        System.out.println(x);
+    }
 }

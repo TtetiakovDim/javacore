@@ -7,6 +7,7 @@ public class Person {
     //private String name;
     protected String name;
 
+
     public Person(String name) {
         this.name = name;
     }
@@ -14,4 +15,10 @@ public class Person {
     final public String getName(String name) {
         return "Dima";
     }
+
+    public String getResponse(String question) {
+        return "My ansver is " + question;
+    }
+
+
 }
