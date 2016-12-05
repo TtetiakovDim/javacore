@@ -61,7 +61,7 @@ public class CardIndexRanner18 {
                     searchKey = userInput();
                     cardIndex.infoSearch(list,searchKey,4);
                     System.out.println(" ");
-                list.
+
                 }
                 if (menuItem.contains("5")) {
                     System.out.println("Enter an expression for search");

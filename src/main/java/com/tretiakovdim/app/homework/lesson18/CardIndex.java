@@ -14,16 +14,24 @@ import java.util.List;
 public class CardIndex {
 
     public void infoSearch(ArrayList<UniversityPerson> list, String searchKey, Integer key) {
+        String nameClass;
+        Students students = new Students();
 
+        Employees employees = new Employees();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).infoCheck(1, searchKey) == true) {
-                System.out.println(list.get(i).getCart() + " " + list.get(i).infoCheck(key, searchKey));
+                nameClass = list.get(i).getClass().getName();
+//                if (nameClass.toLowerCase().contains("Students".trim().toLowerCase())) {
+//                   students=(students)list.get(i);
+//                }
+                System.out.println(list.get(i).getCart() + " " + list.get(i).infoCheck(key, searchKey) + list.get(i).getClass().getName());
             }
         }
         System.out.println("search done");
     }
 
-    public static ArrayList<UniversityPerson> filesReader(String fileName) {
+
+    public ArrayList<UniversityPerson> filesReader(String fileName) {
         String cvsSplit = "|";
         BufferedReader reader;
         try {
