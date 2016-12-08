@@ -14,7 +14,7 @@ public class Students extends UniversityPerson {
     }
 
 
-    public Students(String surname, String name, String faculty, String status, String yearOfStudy, String university) {
+    public Students(String surname, String name, String faculty,String university,String status,String yearOfStudy) {
         super(surname, name, faculty, university);
         this.status = status;
         this.yearOfStudy = yearOfStudy;

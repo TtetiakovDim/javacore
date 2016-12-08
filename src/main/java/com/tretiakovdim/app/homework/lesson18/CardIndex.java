@@ -16,7 +16,6 @@ public class CardIndex {
     public void infoSearch(ArrayList<UniversityPerson> list, String searchKey, Integer key) {
         String nameClass;
         Students students = new Students();
-
         Employees employees = new Employees();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).infoCheck(1, searchKey) == true) {
@@ -51,9 +50,14 @@ public class CardIndex {
                 if (parsLine[0].equals("Students")) {
                     students = new Students(parsLine[1], parsLine[2], parsLine[3], parsLine[4], parsLine[5], parsLine[6]);
                     arrayPerson.add(students);
+                    System.out.println(parsLine[1]+parsLine[2]+ parsLine[3]+ parsLine[4]+ parsLine[5]+ parsLine[6]);
+                    System.out.println(students.getCart()) ;
                 }
                 if (parsLine[0].equals("Employees")) {
                     employees = new Employees(parsLine[1], parsLine[2], parsLine[3], parsLine[4], parsLine[5]);
+                    System.out.println(employees.getCart()) ;
+
+
                     arrayPerson.add(employees);
 
                 }

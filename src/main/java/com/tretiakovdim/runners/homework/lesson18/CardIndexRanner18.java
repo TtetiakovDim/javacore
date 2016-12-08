@@ -22,7 +22,7 @@ public class CardIndexRanner18 {
         ArrayList<UniversityPerson> list = new ArrayList<>();
         CardIndex cardIndex = new CardIndex();
         String menuItem, searchKey;
-//        list = cardIndex.filesReader("src/test/resources/CardIndex.csv");
+        list = cardIndex.filesReader("src/test/resources/CardIndex.csv");
 
 
         System.out.println("Search for University of card index. ");
