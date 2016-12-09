@@ -36,7 +36,7 @@ public class UniversityPerson {
 
     public String getCart() {
 
-        return " | "+surname+"      | "+name+"      | "+faculty;
+        return "|" + surname + "|" + name + "|" + faculty + "|";
     }
 
 
@@ -53,17 +53,18 @@ public class UniversityPerson {
         this.faculty = "";
         this.university = "";
     }
-public boolean infoCheck(Integer key,String value){
-    switch (key) {
-        case 1:
-            return this.surname.toLowerCase().contains(value.trim().toLowerCase());
-        case 2:
-            return this.name.toLowerCase().contains(value.trim().toLowerCase());
-        case 3:
-            return this.faculty.toLowerCase().contains(value.trim().toLowerCase());
+
+    public boolean infoCheck(Integer key, String value) {
+        switch (key) {
+            case 1:
+                return this.surname.toLowerCase().contains(value.trim().toLowerCase());
+            case 2:
+                return this.name.toLowerCase().contains(value.trim().toLowerCase());
+            case 3:
+                return this.faculty.toLowerCase().contains(value.trim().toLowerCase());
+        }
+        return false;
     }
-    return false;
-}
 //    public boolean infoSearchString(Integer key,String value){
 ////        Pattern pattern = Pattern.compile(":|;");
 ////        String[] strings = pattern.split(this.getCart());

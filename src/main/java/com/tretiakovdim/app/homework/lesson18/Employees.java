@@ -20,7 +20,7 @@ public class Employees extends UniversityPerson {
     @Override
     public String getCart() {
 
-        return super.getCart() + "      | " + function + "      | ";
+        return super.getCart() + function + "|";
     }
 
     @Override
@@ -32,8 +32,10 @@ public class Employees extends UniversityPerson {
                 return super.infoCheck(key, value);
             case 3:
                 return super.infoCheck(key, value);
-            case 4:
+            case 6:
                 return this.function.toLowerCase().contains(value.trim().toLowerCase());
+            case 7:
+                return getCart().toLowerCase().contains(value.trim().toLowerCase());
         }
 
         return false;

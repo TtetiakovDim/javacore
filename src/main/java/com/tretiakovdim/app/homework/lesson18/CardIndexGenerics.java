@@ -5,17 +5,24 @@ package com.tretiakovdim.app.homework.lesson18;
  */
 public class CardIndexGenerics<T extends UniversityPerson> {
     private T val;
-//    private T[] t;
+
+    //    private T[] t;
     public CardIndexGenerics(T[] t) {
 
 //        this.t = t;
 
     }
 
-    public CardIndexGenerics(T arg) { val = arg; }
+    public CardIndexGenerics(T arg) {
+        val = arg;
+    }
+
     public String toString() {
         return "{" + val + "}";
     }
-    public T getValue() { return val; }
+
+    public T getValue() {
+        return val;
+    }
 
 }

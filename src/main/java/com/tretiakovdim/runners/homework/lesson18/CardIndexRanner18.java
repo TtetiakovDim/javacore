@@ -24,16 +24,20 @@ public class CardIndexRanner18 {
         String menuItem, searchKey;
         list = cardIndex.filesReader("src/test/resources/CardIndex.csv");
 
-
-        System.out.println("Search for University of card index. ");
+        cardIndex.printCardIndex(list);
+        System.out.println(" ");
+        System.out.println("                       Search for University of card index. ");
         boolean again = true;
         do {
-            System.out.println("1. Search by name ");
-            System.out.println("2. Search by surname  ");
+
+            System.out.println("1. Search by surname ");
+            System.out.println("2. Search by name  ");
             System.out.println("3. Search by faculty ");
-            System.out.println("4. Search by function ");
-            System.out.println("5. Search by type ");
-            System.out.println("6. Search by all.");
+            System.out.println("4. Search by status ");
+            System.out.println("5. Search by yearOfStudy");
+            System.out.println("6. Search by function ");
+            System.out.println("7. Search by all.");
+            System.out.println("8. Print the index card.");
             System.out.println("9. Exit.");
 
             menuItem = userInput();
@@ -41,38 +45,48 @@ public class CardIndexRanner18 {
                 if (menuItem.contains("1")) {
                     System.out.println("Enter an expression for search");
                     searchKey = userInput();
-                    cardIndex.infoSearch(list,searchKey,1);
+                    cardIndex.infoSearch(list, searchKey, 1);
                     System.out.println(" ");
                 }
                 if (menuItem.contains("2")) {
                     System.out.println("Enter an expression for search");
                     searchKey = userInput();
-                    cardIndex.infoSearch(list,searchKey,2);
+                    cardIndex.infoSearch(list, searchKey, 2);
                     System.out.println(" ");
                 }
                 if (menuItem.contains("3")) {
                     System.out.println("Enter an expression for search");
                     searchKey = userInput();
-                    cardIndex.infoSearch(list,searchKey,3);
+                    cardIndex.infoSearch(list, searchKey, 3);
                     System.out.println(" ");
                 }
                 if (menuItem.contains("4")) {
                     System.out.println("Enter an expression for search");
                     searchKey = userInput();
-                    cardIndex.infoSearch(list,searchKey,4);
+                    cardIndex.infoSearch(list, searchKey, 4);
                     System.out.println(" ");
 
                 }
                 if (menuItem.contains("5")) {
                     System.out.println("Enter an expression for search");
                     searchKey = userInput();
-                    cardIndex.infoSearch(list,searchKey,5);
+                    cardIndex.infoSearch(list, searchKey, 5);
                     System.out.println(" ");
                 }
                 if (menuItem.contains("6")) {
                     System.out.println("Enter an expression for search");
                     searchKey = userInput();
-                    cardIndex.infoSearch(list,searchKey,6);
+                    cardIndex.infoSearch(list, searchKey, 6);
+                    System.out.println(" ");
+                }
+                if (menuItem.contains("7")) {
+                    System.out.println("Enter an expression for search");
+                    searchKey = userInput();
+                    cardIndex.infoSearch(list, searchKey, 7);
+                    System.out.println(" ");
+                }
+                if (menuItem.contains("8")) {
+                    cardIndex.printCardIndex(list);
                     System.out.println(" ");
                 }
                 if (menuItem.contains("9")) {
